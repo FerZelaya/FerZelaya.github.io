@@ -6,6 +6,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+		<script src="./main.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -29,7 +31,7 @@
 								
 								<li><a href="#proyects">Proyects</a></li>
 								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#contact">Contact Me</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -71,25 +73,27 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form action="https://formspree.io/fernandozelaya64@hotmail.com"
+								method="POST">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name">
+											<input type="text" name="name" id="name" class="name">
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email">
+											<input type="text" name="email" id="email" class="email">
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" class="message"></textarea>
 										</div>
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary"></li>
-										<li><input type="reset" value="Reset"></li>
-									</ul>
+									<div class="status field">
+
+									</div>
+									</br>
+									<button type="submit" class="submit primary"> Send Message</button>
 								</form>
 								<ul class="icons">
 									<li><a href="https://github.com/FerZelaya" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
